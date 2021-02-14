@@ -22,7 +22,11 @@ export default {
       type: String,
       required: false,
       default() {
-        return 'markdown-editor-' + +new Date() + ((Math.random() * 1000).toFixed(0) + '')
+        return (
+          'markdown-editor-' +
+          +new Date() +
+          ((Math.random() * 1000).toFixed(0) + '')
+        )
       }
     },
     options: {
@@ -43,7 +47,7 @@ export default {
     language: {
       type: String,
       required: false,
-      default: 'en_US' // https://github.com/nhnent/tui.editor/tree/master/src/js/langs
+      default: 'zh_CN' // https://github.com/nhnent/tui.editor/tree/master/src/js/langs
     }
   },
   data() {
